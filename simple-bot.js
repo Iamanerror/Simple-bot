@@ -28,11 +28,11 @@ bot.on('message', message =>{
 
     var prefix = "." //The text before commands, you can put anything that you prefer
 
-    if(message.author.id != "380338040742346752" && message.channel.id === "380337491460489219"){
+    if(message.author.id != "498152471278125076" && message.channel.id === "496740651065540610"){
 
         if(msg.startsWith('.', 0)){
 
-            if(msg === prefix + "ping" && message.channel.id === "380337491460489219"){
+            if(msg === prefix + "ping" && message.channel.id === "496740651065540610"){
 
                 message.channel.send('Pong!') // Sends a message to the channel, with the content
 
@@ -66,13 +66,13 @@ bot.on('guildMemberAdd', member => {
 
     member.addRole(role);
 
-    member.guild.channels.get('380298444243468289').send('**' + member.user.username + '**, has joined the server!')
+    member.guild.channels.get('496740651065540610').send('**' + member.user.username + '**, has joined the server!')
 
 });
 
 bot.on('guildMemberRemove', member => {
 
-    member.guild.channels.get('380298444243468289').send('**' + member.user.username + '**, has left the server!')
+    member.guild.channels.get('496740651065540610').send('**' + member.user.username + '**, has left the server!')
 
 });
 
