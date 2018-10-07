@@ -76,12 +76,13 @@ bot.on('guildMemberRemove', member => {
 
 });
 
+bot.on('avatar', member => {
 
+     if (message.content === 'what is my avatar') {
+         
+        message.reply(message.author.displayAvatarURL());
 
-
-
-
-
+});
 
 
 
