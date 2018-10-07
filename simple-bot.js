@@ -76,6 +76,19 @@ bot.on('guildMemberRemove', member => {
 
 });
 
+client.on('ready', () => {
+  console.log('I am ready!');
+});
+
+// Create an event listener for messages
+client.on('message', message => {
+  // If the message is "what is my avatar"
+  if (message.content === 'what is my avatar') {
+    // Send the user's avatar URL
+    message.reply(message.author.displayAvatarURL());
+  }
+});
+
 // login
 
 bot.login(process.env.BOT_TOKEN) //don't let people know this code as they can then control your bot with it
