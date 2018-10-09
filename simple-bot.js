@@ -86,7 +86,7 @@ guild.ban(user, { days: 7, reason: 'He needed to go' })
   .then(console.log)
   .catch(console.error);
 
-
+});
 
 
 
