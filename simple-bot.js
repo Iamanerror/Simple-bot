@@ -76,9 +76,15 @@ bot.on('guildMemberRemove', member => {
 
 });
 
+// Ban a user by ID
+guild.ban('some user ID')
+  .then(user => console.log(`Banned ${user.username || user.id || user} from ${guild}`))
+  .catch(console.error);
 
-
-   
+   // Ban a user by object with reason and days
+guild.ban(user, { days: 7, reason: 'He needed to go' })
+  .then(console.log)
+  .catch(console.error);
 
 
 
